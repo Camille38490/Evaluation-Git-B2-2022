@@ -1,1 +1,40 @@
 
+*, :after,:before{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style of the top navigation menu & the logo*/
+
+section.navigation {
+    padding: 3%;
+}
+
+.navigation nav.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation nav.top .logo {
+    width: 20%;
+    margin-left: 10%;
+}
+
+.navigation nav.top .logo img {
+    width: 70%;
+}
+
+.navigation nav div.menu{
+    margin-right: 10%;
+}
+
+.navigation nav div.menu a {
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
