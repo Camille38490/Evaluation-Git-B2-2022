@@ -1,1 +1,107 @@
+/*  */
+/* Deletion of all the default parameters */
+/*  */
 
+
+*, :after,:before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*  */
+/* Style of the 4th section -> Team */
+/*  */
+
+section.team {
+    background-image: url(assets/travail-equipe.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    height: 65vh;
+    margin-top: 2%;
+    margin-right: 5%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section.team div.teamtop {
+    width: 40%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+ 
+section.team h2 {
+    font-size: 2.5em;
+    text-align: right;
+}
+
+.square {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #28B7C5;
+    margin: 20px 0;
+}
+
+section.team p {
+    font-size: 1.2em;
+    text-align: right;
+}
+
+section.team button {
+    background: none;
+    border: 2px solid #28B7C5;
+    padding: 20px 40px;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+.line-1 {
+    width: 15px;
+    height: 15px;
+    background: #28B7C5;
+    display: inline-block;
+}
+  
+.line-2 {
+    width: 80px;
+    height: 1px;
+    background: #28B7C5;
+    display: inline-block;
+}
+  
+.line-3 {
+    width: 60px;
+    height: 1px;
+    background: #28B7C5;
+    display: inline-block;
+}
+
+section.team div.line {
+    margin: 20px 0;
+    line-height: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 900px) {
+
+section.team {
+    background-image: none;
+    height: auto;
+    width: 90%;
+    min-width: 300px;
+}
+
+section.team div.teamtop {
+    width: 80%;
+}
+
+}
