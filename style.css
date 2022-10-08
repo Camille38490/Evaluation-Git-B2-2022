@@ -10,7 +10,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /*  */
 /* Style of the top navigation menu & the logo*/
 /*  */
@@ -106,6 +105,32 @@ section.navigation {
 .navigation a.hbg {
     display: block;
 }  
+
+}
+
+
+/*  */
+/* global styles */
+/*  */
+
+section {
+    padding: 10% 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 1.4em;
 }
 
 /*  */
@@ -119,7 +144,7 @@ header {
     background-repeat: no-repeat;
     display: flex;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     margin-top: 2%;
 }
 
@@ -143,143 +168,39 @@ header nav ul img {
 }
 
 header section {
-    width: 35%;
-}
-
-/*  */
-/* Style of the 3rd section -> Presentation of the class */
-/*  */
-
-
-section.curriculum {
-    background-image: url(assets/presentation-classe.png);
-}
-
-/*  */
-/* Style of the last section -> Contact */
-/*  */
-
-section.contact {
-    background-image: url(assets/envoie-message.png);
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: right;
-    display: flex;
-    height: 50vh;
-    margin-top: 2%;
-    margin-right: 5%;
-}
-
-section.curriculum div.curriculumtop {
-    width: 60%;
+    width: 45%;
     min-width: 300px;
     padding-left: 10%;
+    padding-top: 0;
 }
 
 header section h1 {
     font-size: 2.5em;
 }
 
-/*  */
-/* Style of the 4th section -> Team */
-/*  */
-
-section.team {
-    background-image: url(assets/travail-equipe.png);
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: left;
-    display: flex;
-    height: 65vh;
-    margin-top: 2%;
-    margin-right: 5%;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-section.team div.teamtop {
-    width: 40%;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
- 
-section.team h2 {
-    font-size: 2.5em;
-    text-align: right;
-    flex-direction: column;
-    height: 65vh;
-    margin-top: 2%;
-    margin-left: 5%;
-    /* justify-content: flex-end; */
-    align-items: flex-start;
-}
-
-section.contact h2 {
-    font-size: 2.5rem;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 2%;
-    width: 650px;
-    min-width: none;
-    min-width: 400px;
-}
-
-section.contact input,
-section.contact textarea {
-  width: 60%;
-  border: 2px solid #28b7c5;
-  padding: 10px 15px;
-  margin: 5px;
-}
-
-section.contact div.formsubmit {
-    width: 100%;
-}
-
-section.contact button {
-    width: 29.25%;
-    border: 2px solid #28b7c5;
-    margin: 5px 3px;
-    padding: 20px 20px;
-    background-color: transparent;
-}
-
-.square {
-    height: 12px;
-    width: 12px;
-    display: inline-block;
-    background: #28B7C5;
-    margin: 20px 0;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-header button,
-section.curriculum p {
-    font-size: 1.2em;
-}
-
-section.curriculum button,
-section.team p {
-    font-size: 1.2em;
-    text-align: right;
-}
-
-section.team button {
+header button {
     background: none;
     border: 2px solid #28B7C5;
     padding: 20px 40px;
     margin: 20px 0;
     font-size: 1em;
 }
+
+header div.line {
+    margin: 40px 0;
+}
+
+@media screen and (max-width: 900px) {
+
+    header {
+        background-image: none;
+    }
+    
+}
+
+/*  */
+/* Style of the div line & square */
+/*  */
 
 .line-1 {
     width: 15px;
@@ -306,8 +227,12 @@ section.team button {
     line-height: 8px;
 }
 
-header div.line {
-    margin: 40px 0;
+.square {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #28B7C5;
+    margin: 20px 0;
 }
 
 /*  */
@@ -336,21 +261,11 @@ section.working div.workingtop {
 }
  
 section.working h2 {
-    font-size: 2.5em;
     text-align: right;
     position: relative;
 }
 
-.square {
-    height: 12px;
-    width: 12px;
-    display: inline-block;
-    background: #28B7C5;
-    margin: 20px 0;
-}
-
 section.working p {
-    font-size: 1.2em;
     text-align: right;
 }
 
@@ -360,29 +275,7 @@ section.working blockquote p {
     font-weight: bolder;
 }
 
-.line-1 {
-    width: 15px;
-    height: 15px;
-    background: #28B7C5;
-    display: inline-block;
-}
-  
-.line-2 {
-    width: 80px;
-    height: 1px;
-    background: #28B7C5;
-    display: inline-block;
-}
-  
-.line-3 {
-    width: 60px;
-    height: 1px;
-    background: #28B7C5;
-    display: inline-block;
-}
-
-section.working div.line,
-section.team div.line {
+section.working div.line {
     margin: 20px 0;
     line-height: 8px;
     display: flex;
@@ -392,14 +285,7 @@ section.team div.line {
 
 @media screen and (max-width: 900px) {
 
-section.working,
-section.team {
-    margin: 20px 0;
-}
-
-@media screen and (max-width: 900px) {
-
-section.contact {
+section.working {
     background-image: none;
     height: auto;
     width: 90%;
@@ -412,37 +298,264 @@ section.working div.workingtop {
 
 }
 
+
 /*  */
-/* Style of the competences section */
+/* Style of the 2nd section -> Skills */
 /*  */
 
-section.competences {
+section.skills {
+    padding: 5%;
+}
+
+section.skills div.knowledges {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-}
-
-section.competences div.projet {
-    margin: 0 40px;
-}
-
-section.competences p {
-    margin-top: 20px;
+    margin: 0 5%;
     text-align: center;
-    font-size: 1.2em;
 }
-    
-section.competences button {
-    position: absolute;
+
+section.skills div.linked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+section.skills button {
     background: none;
     padding: 20px;
     border: 2px solid #28B7C5;
-    top: 120%;
-    width: fit-content;
     font-size: 1.1em;
-    cursor: pointer;
+    margin-top: 5%;
 }
+
+section.skills p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+    section.skills div.knowledges {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/*  */
+/* Style of the 3rd section -> Presentation of the class */
+/*  */
+
+
+section.curriculum {
+    background-image: url(assets/presentation-classe.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 5%;
+}
+
+section.curriculum div.curriculumtop {
+    width: 60%;
+    min-width: 250px;
+    padding-left: 5%;
+}
+
+section.curriculum button {
+    background: none;
+    border: 2px solid #28B7C5;
+    padding: 20px 40px;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+section.curriculum div.line {
+    margin: 20px 0;
+    max-width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+
+section.curriculum {
+    background-image: none;
+    padding-left: 10%;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+    section.curriculum div.line {
+        display: none;
+    }
+}
+
+
+/*  */
+/* Style of the 4th section -> Team */
+/*  */
+
+
+section.team {
+    background-image: url(assets/travail-equipe.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    height: 65vh;
+    margin-top: 2%;
+    margin-right: 5%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section.team div.teamtop {
+    width: 40%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+ 
+section.team h2 {
+    text-align: right;
+}
+
+.square {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #28B7C5;
+    margin: 20px 0;
+}
+
+section.team p {
+    text-align: right;
+}
+
+section.team button {
+    background: none;
+    border: 2px solid #28B7C5;
+    padding: 20px 40px;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+section.team div.line {
+    margin: 20px 0;
+    line-height: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 900px) {
+
+section.team {
+    background-image: none;
+    height: auto;
+    width: 90%;
+    min-width: 200px;
+}
+
+}
+
+
+/*  */
+/* Style of the last section -> Contact */
+/*  */
+
+section.contact {
+    background-image: url(assets/envoie-message.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    margin-top: 2%;
+    margin-left: 5%;
+    align-items: flex-start;
+    min-height: 520px;
+    margin-right: 5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2%;
+    width: 650px;
+    min-width: none;
+    min-width: 250px;
+}
+
+section.contact input,
+section.contact textarea {
+  width: 60%;
+  border: 2px solid #28b7c5;
+  padding: 10px 15px;
+  margin: 5px;
+}
+
+section.contact div.formsubmit {
+    width: 100%;
+}
+
+section.contact button {
+    width: 29.25%;
+    border: 2px solid #28b7c5;
+    margin: 5px 3px;
+    padding: 20px 20px;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 900px) {
+
+section.contact {
+    background-image: none;
+    height: auto;
+    width: 90%;
+    min-width: 250px;
+}
+
+section.contact form,
+section.contact div.formsubmit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.contact h2 {
+    font-size: 1.2rem;
+    margin-left: 2%;
+    align-self: center;
+}
+
+section.contact div.line {
+    margin-left: 5%;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+    section.contact div.line {
+        display: none;
+    }
+
+    section.contact button {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    section.contact h2 {
+        font-size: 1em;
+    }
+}
+
 
 /*  */
 /* Style of the footer */
@@ -453,6 +566,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: space-between;
+    padding-bottom: 20px;
+    margin-top: 2%;
+    margin-top: 10%;
 }
 
 footer hr {
@@ -479,53 +595,10 @@ footer div.link {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 30%;
-}
-
-@media screen and (max-width: 950px) {
-
-section.competences {
-    flex-direction: column;
-    }
-section.competences div.projet {
-    width: 100%;
-    }
-section.competences button {
-    top: 105%;
-    }
-section.curriculum div.line {
-    margin: 20px 0;
-}
-
-}
-
-@media screen and (max-width: 900px) {
-
-section.curriculum {
-    background-image: none;
-}
-
-section.team div.teamtop {
-    width: 80%;
-}
-
-section.contact form {
-    width: 100%;
-}
-
-section.contact h2 {
-    font-size: 1.2rem;
-    margin-left: 2%;
-}
-
-@media screen and (max-width: 300px) {
-    section.contact h2 {
-        font-size: 1em;
-    }
+    margin: 0 40px;
 }
 
 footer h4 {
-    font-size: 1.4em;
     color: #28b7c5;
     font-weight: bold;
     margin-bottom: 25px;
@@ -534,7 +607,6 @@ footer h4 {
 footer div.link a {
     text-decoration: none;
     color: black;
-    font-weight: 1.4em;
     cursor: pointer;
 }
 
@@ -570,7 +642,6 @@ footer div.school button {
     border: 2px solid #28B7C5;
     padding: 20px 40px;
     margin-top: 20px;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {

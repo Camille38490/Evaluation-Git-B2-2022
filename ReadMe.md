@@ -75,10 +75,10 @@ git  origin url_of_the_repo
 git push -u origin master
 ```
 
-## if modification
+## if you modified a file your need to add, then commit and finaly push your work to GitHub
 
 ```bash
-git add nom_du_fichier
+git add name_of_the_file
 ```
 
 ```bash
@@ -88,43 +88,16 @@ git commit -m "Title_of_the_modification"
 ```bash
 git push
 ```
+## 📞 License 
 
-## 💻 Compléter le fichier ReadMe.md
+The design is under copyright of Paul Collas
 
-Ce premier tp a pour consigne de compléter un fichier ReadMe.md
+[Paul Collas] (https://github.com/PaulCollas)
 
-```bash
-cd racine/dossier_concerné/dossier_de_votre_projet
-```
+Authors :
 
-## Ajouter chaque version au repo distant
+[Olivier Blandin] (https://github.com/OlivierBldn)
 
-Cet exercice consiste a enregistrer chaque modification sur le repo distant
+[Camille Hurel] (https://github.com/Camille38490)
 
-# 📝 Deuxième TP
-
-## 💻 créer un fichier index.html et style.css
-
-Ce second tp a pour consigne de créer un fichier index.html et un fichier style.css
-
-## Ajouter chaque version au repo distant
-
-Cet exercice consiste a enregistrer chaque modification sur le repo distant
-
-# 📝 Troisième TP
-
-## 💻 Compléter les fichiers index.html et style.css
-
-Ce dernier tp a pour consigne de modifier les fichiers index.html et un fichier style.css
-
-## Commits différents
-
-Cet exercice consiste a enregistrer chaque modification sur le repo distant pour avoir plusieur commits
-
-## 📞 License
-
-Author : 
-
-[Olivier Blandin](https://github.com/OlivierBldn)
-
-Projet pédagogique pour MyDigitalSchool - Caen
+School project fo MyDigitalSchool - Caen - FRANCE
