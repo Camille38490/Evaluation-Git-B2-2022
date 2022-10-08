@@ -106,7 +106,9 @@ section.navigation {
 .navigation a.hbg {
     display: block;
 }  
+}
 
+/*  */
 /* Style of the header & the side navigation menu */
 /*  */
 
@@ -142,6 +144,26 @@ header nav ul img {
 
 header section {
     width: 35%;
+}
+
+/*  */
+/* Style of the 3rd section -> Presentation of the class */
+/*  */
+
+
+section.curriculum {
+    background-image: url(assets/presentation-classe.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    height: 50vh;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+section.curriculum div.curriculumtop {
+    width: 60%;
     min-width: 300px;
     padding-left: 10%;
 }
@@ -162,7 +184,12 @@ header p {
     font-size: 1.2em;
 }
 
-header button {
+header button,
+section.curriculum p {
+    font-size: 1.2em;
+}
+
+section.curriculum button {
     background: none;
     border: 2px solid #28B7C5;
     padding: 20px 40px;
@@ -291,6 +318,9 @@ section.working div.workingtop {
     width: 80%;
 }
 
+}
+
+/*  */
 /* Style of the competences section */
 /*  */
 
@@ -336,4 +366,16 @@ section.competences button {
     section.competences button {
         top: 105%;
     }
+section.curriculum div.line {
+    margin: 20px 0;
+}
+
+}
+
+@media screen and (max-width: 900px) {
+
+section.curriculum {
+    background-image: none;
+}
+
 }
