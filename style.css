@@ -153,6 +153,14 @@ header section {
 
 section.curriculum {
     background-image: url(assets/presentation-classe.png);
+}
+
+/*  */
+/* Style of the last section -> Contact */
+/*  */
+
+section.contact {
+    background-image: url(assets/envoie-message.png);
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: right;
@@ -200,6 +208,46 @@ section.team div.teamtop {
 section.team h2 {
     font-size: 2.5em;
     text-align: right;
+    flex-direction: column;
+    height: 65vh;
+    margin-top: 2%;
+    margin-left: 5%;
+    /* justify-content: flex-end; */
+    align-items: flex-start;
+}
+
+section.contact h2 {
+    font-size: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2%;
+    width: 650px;
+    min-width: none;
+    min-width: 400px;
+}
+
+section.contact input,
+section.contact textarea {
+  width: 60%;
+  border: 2px solid #28b7c5;
+  padding: 10px 15px;
+  margin: 5px;
+}
+
+section.contact div.formsubmit {
+    width: 100%;
+}
+
+section.contact button {
+    width: 29.25%;
+    border: 2px solid #28b7c5;
+    margin: 5px 3px;
+    padding: 20px 20px;
+    background-color: transparent;
 }
 
 .square {
@@ -346,6 +394,12 @@ section.team div.line {
 
 section.working,
 section.team {
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 900px) {
+
+section.contact {
     background-image: none;
     height: auto;
     width: 90%;
@@ -420,4 +474,17 @@ section.team div.teamtop {
     width: 80%;
 }
 
+section.contact form {
+    width: 100%;
+}
+
+section.contact h2 {
+    font-size: 1.2rem;
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 300px) {
+    section.contact h2 {
+        font-size: 1em;
+    }
 }
