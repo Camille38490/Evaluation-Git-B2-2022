@@ -424,11 +424,7 @@ section.competences {
 }
 
 section.competences div.projet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
+    margin: 0 40px;
 }
 
 section.competences p {
@@ -436,7 +432,7 @@ section.competences p {
     text-align: center;
     font-size: 1.2em;
 }
-
+    
 section.competences button {
     position: absolute;
     background: none;
@@ -448,15 +444,54 @@ section.competences button {
     cursor: pointer;
 }
 
+/*  */
+/* Style of the footer */
+/*  */
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+footer hr {
+    width: 85%;
+    background-color: #28b7c5;
+    height: 2px;
+    margin: auto;
+}
+
+footer div.bottom {
+    display: flex;
+}
+
+footer div.links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 60%;
+    padding: 0 5%;
+}
+
+footer div.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
 @media screen and (max-width: 950px) {
-    section.competences {
-        flex-direction: column;
+
+section.competences {
+    flex-direction: column;
     }
-    section.competences div.projet {
-        width: 100%;
+section.competences div.projet {
+    width: 100%;
     }
-    section.competences button {
-        top: 105%;
+section.competences button {
+    top: 105%;
     }
 section.curriculum div.line {
     margin: 20px 0;
@@ -487,4 +522,103 @@ section.contact h2 {
     section.contact h2 {
         font-size: 1em;
     }
+}
+
+footer h4 {
+    font-size: 1.4em;
+    color: #28b7c5;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+footer div.link a {
+    text-decoration: none;
+    color: black;
+    font-weight: 1.4em;
+    cursor: pointer;
+}
+
+footer div.signature {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 30%;
+    margin-top: 2%;
+}
+
+footer div.copyright {
+    margin: 0 20px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div.school {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer div.school img {
+    width: 150px;
+    cursor: pointer;
+}
+
+footer div.school button {
+    background: none;
+    border: 2px solid #28B7C5;
+    padding: 20px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+
+h4 {
+    text-align: center;
+    font-size: 1.2em;
+}
+}
+
+@media screen and (max-width: 1000px) {
+
+footer {
+    align-items: center;
+}
+
+footer div.bottom {
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+}
+
+footer div.links {
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div.link {
+    margin-top: 10px;
+}
+
+footer div.link h4 {
+    margin: 5px;
+}
+
+footer div.signature {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+footer div.copyright {
+    margin: 10px;
+    padding: 10px;
+}
+
+footer div.school button {
+    margin-bottom: 20px;
+}
+
 }
