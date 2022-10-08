@@ -4,8 +4,107 @@
 
 
 *, :after,:before{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*  */
+/* Style of the top navigation menu & the logo*/
+/*  */
+
+
+section.navigation {
+    padding: 3% 0;
+}
+
+.navigation nav.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation nav.top .logo {
+    max-width: 20%;
+    margin-left: 10%;
+}
+
+.navigation nav.top .logo img {
+    width: 70%;
+}
+
+.navigation nav div.menu{
+    margin-right: 10%;
+}
+
+.navigation nav div.menu a {
+    padding: 30px;
+    text-decoration: none;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+/*  */
+/* Style of the burger menu */
+/*  */
+
+.navigation a.hbg {
+    display: none;
+    height: 40px;
+    width: 40px;
+    position: relative;
+
+}
+
+.navigation a.hbg span {
+    position: absolute;
+    height: 3px;
+    background: grey;
+    border-radius: 20px;
+    float: left;
+    right: 0;
+    transition: width .5s ease;
+}
+
+.navigation a.hbg span:first-child {
+    top: 10px;
+    width: 100%;
+}
+
+.navigation a.hbg span:nth-child(2) {
+    top: 20px;
+    width: 70%;
+}
+
+.navigation a.hbg:hover span:nth-child(2) {
+    width: 100%;
+}
+
+.navigation a.hbg:hover span:last-child {
+    width: 100%;
+}
+
+.navigation a.hbg span:last-child {
+    top: 30px;
+    width: 40%;
+}
+
+@media screen and (max-width: 1120px) {
+    
+.navigation div.menu {
+    display: none;
+}
+
+.navigation .burger {
+    margin-right: 10%;
+}
+
+.navigation a.hbg {
+    display: block;
+}  
+
 }
